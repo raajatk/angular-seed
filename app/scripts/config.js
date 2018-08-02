@@ -2,6 +2,6 @@
 
 angular.module('appConfig', [])
 
-.constant('ENV', 'staging')
+.constant('ENV', 'development')
 
 ;

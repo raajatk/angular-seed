@@ -193,6 +193,23 @@ module.exports = function (grunt) {
       server: '.tmp'
     },
 
+    less: {
+      compileCore: {
+        options: {
+          strictMath: true
+        },
+        src: '<%= config.app %>/styles/less/urban.less',
+        dest: '.tmp/styles/<%= config.name %>.css'
+      },
+      compileSkin: {
+        options: {
+          strictMath: true
+        },
+        src: '<%= config.app %>/styles/less/urban.skins.less',
+        dest: '.tmp/styles/<%= config.name %>.skins.css'
+      }
+    },
+
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
