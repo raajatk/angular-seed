@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="angular-seed">
+
+  <head>
+    <title>My Angular Seed</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- build:css css/app-name.min.css -->
+    <link href="styles/style.css" rel="stylesheet">
+    <!-- endbuild -->
+
+
+  </head>
+  <body ng-controller="appCtrl">
+
+
+    <div ng-view></div>
+
+      <!-- build:js({.tmp,app}) scripts/app.min.js -->
+    <script src="scripts/angular.js"></script>
+
+      <script src="scripts/angular-resource.js"></script>
+
+      <script src="scripts/angular-sanitize.js"></script>
+
+      <script src="scripts/angular-route.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.router.js"></script>
+    <script src="scripts/controllers/DemoController.js"></script>
+    <script src="scripts/services/CommonService.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
